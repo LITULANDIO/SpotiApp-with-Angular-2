@@ -1,0 +1,41 @@
+
+<div class="container top-category">
+
+<div class="row">
+<div class="col-md-12">
+<h1>Artista: {{ search }}</h1>
+</div>
+</div>
+
+<div class="row top-category">
+<div class="col-md-3">
+	
+	<input [(ngModel)]="search" (keyup)="searchArtist()" class="form-control" type="text" name="search" placeholder="Buscar por artista ...">
+<hr>
+	</div>
+</div>
+
+<div class="col-md-9">
+
+<div class="row">
+<div class="col-md-3 text-center puntero" [routerLink]="['/artista', artist.id]" *ngFor=" let artist of _spotyfyService.artistas">
+	<img [src]="artist.images | sinfoto" class="img-fluid img-thumbnail">
+	<p>
+		{{ artist.name }}
+	</p>
+
+</div>
+</div>
+	<!-- <ul>
+		<li *ngFor="let artist of _spotyfyService.artistas">
+			
+			{{ artist.name }}
+		</li>
+	
+	</ul> -->
+</div>
+
+
+
+
+
