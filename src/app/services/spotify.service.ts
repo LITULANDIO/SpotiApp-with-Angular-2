@@ -19,7 +19,7 @@ urlArtist:string="https://api.spotify.com/v1/artists"
 getArtistas(artist:string){
 
 	let headers = new Headers()
-	headers.append('authorization', 'Bearer BQDraijgApzqMsO_Y41MUmRMyxVrKVBE9Xu2ke9hJnISouRo3S_mQHgyjfC9ESwau-1TCZnhzZVquGriUuvcag')
+	headers.append('authorization', 'Bearer BQBoZV3CjpzOnFbui4HKtXTo9GGmgWfug9Gsg5gUnRX3x-4kq_q8r-2fKn747WXY1GXNSBIobKDntVaDJ8p2Mg')
 
 	let query = `?q=${ artist }&type=artist`
 	let url = this.urlSearch + query

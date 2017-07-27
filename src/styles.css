@@ -73,3 +73,10 @@ hr{
 .top-category{
   margin-top: 40px;
 }
+
+
+
+img.img-artist{ 
+  margin-top: 40px;
+  float: left;
+}
